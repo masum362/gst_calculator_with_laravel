@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Test;
 use Illuminate\Http\Request;
 
-class   TestController extends Controller
+class TestController extends Controller
 {
     public function index()
     {
@@ -16,17 +16,17 @@ class   TestController extends Controller
         // $test->phone = '01700000000';
         // $test->save();
 
-        $query = 'SELECT @@global.time_zone, @@session.time_zone';
+        // $query = 'SELECT @@global.time_zone, @@session.time_zone';
 
 
-        $res = Test::query($query);
+        // $res = Test::query($query);
         // Test::create($test);
 
         // dd('hello world');
 
 
-        dd($res);
+        // dd($res);
 
-        // return view('test.index');
+        return view('welcome');
     }
 }
